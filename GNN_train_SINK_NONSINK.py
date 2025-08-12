@@ -405,5 +405,5 @@ def train_gnn(dataset_path):
                 logging.info(f"  Node {j}: Predicted={idx_to_role[preds[j]]}, True={idx_to_role[labels[j]]}, Content={node_content}")
 
 if __name__ == "__main__":
-    dataset_path = "/home/nimana11/Thesis/codes/VulExplainerExp-84ED_2/runs/run_full_bufferoverflow_sink_none/labeled_dataset.json"
+    dataset_path = "runs/run_full_bufferoverflow_sink_none/labeled_dataset.json"
     train_gnn(dataset_path)

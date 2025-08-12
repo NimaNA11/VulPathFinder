@@ -79,7 +79,7 @@ class GNN(torch.nn.Module):
 @dataclass
 class VisualizationConfig:
     """Configuration class for visualization settings."""
-    base_dir: str = "/home/nimana11/Thesis/codes/VulExplainerExp-84ED_2/datasets/buffer overflow/function/testcases"
+    base_dir: str = "/datasets/buffer overflow/function/testcases"
     output_dir: str = "visualizations"
     output_filename: str = "samples_visualization.html"
     max_node_content_length: int = 30
@@ -934,7 +934,7 @@ def evaluate_gnn(dataset_path, word2vec_model_path, gnn_model_path):
             logging.info(f"  Node {j}: Predicted={idx_to_role[preds[j]]}, True={idx_to_role[labels[j]]}, Content={node_content}")
 
 if __name__ == "__main__":
-    dataset_path = "/home/nimana11/Thesis/codes/VulExplainerExp-84ED_2/runs/run_full_bufferoverflow_sink_none/labeled_dataset.json"
+    dataset_path = "/runs/run_full_bufferoverflow_sink_none/labeled_dataset.json"
     word2vec_model_path = "word2vec_model.model"
     gnn_model_path = "gnn_word2vec_model.pth"
     evaluate_gnn(dataset_path, word2vec_model_path, gnn_model_path)
