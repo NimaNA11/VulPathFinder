@@ -46,6 +46,7 @@ pycparser (or similar parser for C/C++ code)
 Setup
 # Clone the repository
 git clone https://github.com/NimaNA11/VulPathFinder.git
+
 cd VulPathFinder
 
 # Install dependencies
